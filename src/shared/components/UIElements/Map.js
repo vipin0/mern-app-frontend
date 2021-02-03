@@ -1,9 +1,10 @@
 import React,{useRef,useEffect} from 'react';
-
+import mapboxgl from 'mapbox-gl';
 import './Map.css'
 
 // const ACCESS_TOKEN = 'pk.f9af2250f453adff66b3b1567278ce1c'
 
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY
 
 const Map = props => {
     const mapRef = useRef();
@@ -21,15 +22,14 @@ const Map = props => {
 
     // useEffect(() => {
     //     const map = new mapboxgl.Map({
-    //             container: 'map',
-    //             attributionControl: false, //need this to show a compact attribution icon (i) instead of the whole text
-    //             style: 'https://tiles.locationiq.com/v2/streets/vector.json?key='+ACCESS_TOKEN,
-    //             zoom: zoom,
-    //             center: center
-    //         });
-    // new mapboxgl.Marker(el2)
-    //             .setLngLat({center})
-    //             .addTo(map);
+    //     container: 'modal-hook',
+    //     style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+    //     center: center, // starting position [lng, lat]
+    //     zoom: zoom // starting zoom
+    //     });
+    //     var marker = new mapboxgl.Marker()
+    //     .setLngLat(center)
+    //     .addTo(map);
     // },[center,zoom]);
 
     
