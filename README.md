@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### The live project can be seen at [share-place.netlify.app](https://share-place.netlify.app)
+### The live project can be seen at [https://travelogueit.pages.dev/](https://travelogueit.pages.dev/)
 
 ## Available Scripts
 
